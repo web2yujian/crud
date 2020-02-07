@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>小栗子</title>
+
+<!--    <link href="../public/bootstrap.dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/public/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<!--            <h1 class="page-header">Dashboard</h1>-->
+            <a href="/students">返回首页</a>
+            <div class="row placeholders">
+                {{each fruits}}
+                <div class="col-xs-6 col-sm-3 placeholder">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>{{$value}}</h4>
+                    <span class="text-muted">Something else</span>
+                </div>
+                {{/each}}
+            </div>
+
+            <h2 class="sub-header">添加学生</h2>
+<!--            <button type="button" class="btn btn-success">添加学生</button>-->
+            <form action="/students/new" method="post">
+                <div class="form-group">
+                    <label for="">姓名</label>
+                    <input type="text" class="form-control" name="name" >
+                </div>
+                <div class="form-group">
+                    <label for="">性别</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" checked value="0"> 男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender"  value="1"> 女
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="">年龄</label>
+                    <input type="number" class="form-control" name="age" >
+                </div>
+                <div class="form-group">
+                    <label for="">爱好</label>
+                    <input type="text" class="form-control" name="hobbies" >
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

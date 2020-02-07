@@ -1,0 +1,46 @@
+{
+  "students": [
+    {
+      "id": 3,
+      "name": "王五",
+      "gender": 0,
+      "age": 38,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    },
+    {
+      "id": 4,
+      "name": "赵芳",
+      "gender": 1,
+      "age": 15,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    },
+    {
+      "id": 5,
+      "name": "孙红雷",
+      "gender": 0,
+      "age": 28,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    },
+    {
+      "id": 6,
+      "name": "张艺兴",
+      "gender": 0,
+      "age": 22,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    },
+    {
+      "id": 7,
+      "name": "小乔",
+      "gender": 1,
+      "age": 19,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    },
+    {
+      "id": 8,
+      "name": "妲己",
+      "gender": 1,
+      "age": 21,
+      "hobbies": "吃饭、睡觉、打豆豆、lol"
+    }
+  ]
+}
